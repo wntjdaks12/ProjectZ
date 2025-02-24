@@ -1,15 +1,17 @@
 using UnityEngine;
 
-public class IdleState : IState
+public class RunState : IState
 {
-    public static IdleState Instance { get; } = new IdleState();
-
+    public static RunState Instance { get; } = new RunState();
     public void OnBasicAttack(CharacterObject characterObject)
     {
     }
 
     public void OnIdle(CharacterObject characterObject)
     {
+        characterObject.animator.SetBool("IsRun", false);
+
+        characterObject.StateManager.State = IdleState.Instance;
     }
 
     public void OnRun(CharacterObject characterObject)
@@ -19,9 +21,5 @@ public class IdleState : IState
 
         characterObject.animator.SetFloat("MoveX", xAxis);
         characterObject.animator.SetFloat("MoveZ", zAxis);
-
-        characterObject.animator.SetBool("IsRun", true);
-
-        characterObject.StateManager.State = RunState.Instance;
     }
 }

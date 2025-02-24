@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4552529618395618286}
+  - component: {fileID: 8959956416077470272}
+  - component: {fileID: -6946941757876578859}
   m_Layer: 0
   m_Name: Nikaidou
   m_TagString: Untagged
@@ -32,6 +34,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8959956416077470272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4552529618395618287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc8ce8fae6886d449a3fe8f760b1771a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <animator>k__BackingField: {fileID: 4552529617539660780}
+  <animationHandler>k__BackingField: {fileID: 0}
+  <Rigidbody>k__BackingField: {fileID: 0}
+  <MiniHUDNode>k__BackingField: {fileID: 0}
+  <ProjectileNode>k__BackingField: {fileID: 0}
+--- !u!114 &-6946941757876578859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4552529618395618287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610b88787a04fd447b2b1e9be9341a81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HeroObject: {fileID: 8959956416077470272}
 --- !u!1001 &4552529618595738029
 PrefabInstance:
   m_ObjectHideFlags: 0

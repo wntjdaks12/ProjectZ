@@ -27,11 +27,11 @@ public class CharacterObject : ActorObject
         StateManager.State.OnIdle(this);
     }
 
-    public virtual void OnMove(Vector3 dir, float speed)
+    public virtual void OnRun(Vector3 dir, float speed)
     {
         transform.Translate(dir * Time.deltaTime * speed, Space.World);
 
-        StateManager.State.OnWalk(this);
+        StateManager.State.OnRun(this);
     }
 
     public virtual void OnBasicAttack()

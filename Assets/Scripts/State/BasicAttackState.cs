@@ -13,10 +13,10 @@ public class BasicAttackState : IState
         characterObject.StateManager.State = IdleState.Instance;
     }
 
-    public void OnWalk(CharacterObject characterObject)
+    public void OnRun(CharacterObject characterObject)
     {
         characterObject.animator.SetBool("IsWalking", true);
 
-        characterObject.StateManager.State = WalkState.Instance;
+        characterObject.StateManager.State = RunState.Instance;
     }
 }
