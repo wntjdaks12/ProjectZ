@@ -6,6 +6,7 @@ public class IdleState : IState
 
     public void OnBasicAttack(CharacterObject characterObject)
     {
+        characterObject.animator.SetTrigger("OnAttack");
     }
 
     public void OnIdle(CharacterObject characterObject)

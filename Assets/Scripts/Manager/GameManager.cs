@@ -4,6 +4,8 @@ public class GameManager : MonoBehaviour
 {
     private void Start()
     {
-        GameApplication.Instance.EntityController.Spawn<Hero, HeroObject>(10001, Vector3.zero, Quaternion.identity);
+        var heroObj = GameApplication.Instance.EntityController.Spawn<Hero, HeroObject>(10001, Vector3.zero, Quaternion.identity);
+
+        CameraManager.Instance.PlayerCam.Follow = heroObj.transform;
     }
 }

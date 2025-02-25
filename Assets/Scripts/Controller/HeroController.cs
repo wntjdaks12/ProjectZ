@@ -14,11 +14,16 @@ public class HeroController : MonoBehaviour
 
         if (dirVec3 != Vector3.zero)
         {
-            HeroObject.OnRun(dirVec3, 0);
+            HeroObject.OnRun(dirVec3, 2);
         }
         else
         {
             HeroObject.OnIde();
+        }
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            HeroObject.OnBasicAttack();
         }
     }
 }

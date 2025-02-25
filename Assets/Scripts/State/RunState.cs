@@ -5,6 +5,7 @@ public class RunState : IState
     public static RunState Instance { get; } = new RunState();
     public void OnBasicAttack(CharacterObject characterObject)
     {
+        characterObject.animator.SetTrigger("OnAttack");
     }
 
     public void OnIdle(CharacterObject characterObject)

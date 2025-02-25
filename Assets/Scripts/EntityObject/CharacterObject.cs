@@ -38,13 +38,13 @@ public class CharacterObject : ActorObject
     {
         StateManager.State.OnBasicAttack(this);
 
-        animationHandler.StartAttackAnimation();
+        //animationHandler.StartAttackAnimation();
     }
 
     public virtual void OnSkill()
     {
         StateManager.State.OnBasicAttack(this);
 
-        animationHandler.StartAttackAnimation();
+        //animationHandler.StartAttackAnimation();
     }
 }
