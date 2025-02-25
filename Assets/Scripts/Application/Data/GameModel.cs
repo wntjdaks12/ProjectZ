@@ -21,6 +21,7 @@ public class GameModel : MonoBehaviour
         // 비 휘발성 데이터 로드 ------------------------------------------------------------------------------------------
         PresetData.LoadData<PrefabInfo>(nameof(PrefabInfo), "JsonDatas/PrefabInfo"); // 프리팹 정보
         PresetData.LoadData<Hero>(nameof(Hero), "JsonDatas/Hero"); // 히어로
+        PresetData.LoadData<Projectile>(nameof(Projectile), "JsonDatas/Projectile"); // 투사체
         // ----------------------------------------------------------------------------------------------------------------
     }
 }

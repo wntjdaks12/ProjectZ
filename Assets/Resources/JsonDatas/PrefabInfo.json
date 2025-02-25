@@ -2,6 +2,11 @@
   {
     "id": 10001,
     "path": "Prefabs/Characters/Heros/Nikaidou"
+  },
+
+  {
+    "id": 20001,
+    "path": "Prefabs/Projectiles/FireBall"
   }
 ]
   
