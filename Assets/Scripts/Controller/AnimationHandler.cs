@@ -14,8 +14,6 @@ public class AnimationHandler : MonoBehaviour
     public void StartAttackAnimation()
     {
         IsAttacking = true;
-
-        StartCoroutine(TempAniamtionAsynv());
     }
 
     public void TriggerAttack()
@@ -30,12 +28,4 @@ public class AnimationHandler : MonoBehaviour
     {
         IsAttacking = false;
     }
-
-    private IEnumerator TempAniamtionAsynv()
-    {
-        yield return new WaitForSeconds(1f);
-
-        ExitAttackAnimation();
-    }
-
 }

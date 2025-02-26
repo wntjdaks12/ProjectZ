@@ -20,6 +20,8 @@ public class CharacterObject : ActorObject
 
         StateManager = new StateManager();
         StateManager.State.OnIdle(this);
+
+        RegisterEvent();
     }
 
     public virtual void OnIde()
@@ -38,7 +40,7 @@ public class CharacterObject : ActorObject
     {
         StateManager.State.OnBasicAttack(this);
 
-        //animationHandler.StartAttackAnimation();
+        animationHandler.StartAttackAnimation();
     }
 
     public virtual void OnSkill()
@@ -46,5 +48,13 @@ public class CharacterObject : ActorObject
         StateManager.State.OnBasicAttack(this);
 
         //animationHandler.StartAttackAnimation();
+    }
+
+    private void RegisterEvent()
+    {
+        animationHandler.OnTriggerAttackEvent += () =>
+        {
+            Character.BasicAttack.Use(this);
+        };
     }
 }

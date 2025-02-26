@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6952677889371389458}
   - component: {fileID: 6017114440420158270}
+  - component: {fileID: 5668407109732068092}
   m_Layer: 0
   m_Name: FireBall
   m_TagString: Untagged
@@ -48,6 +49,19 @@ MonoBehaviour:
   <animator>k__BackingField: {fileID: 0}
   <animationHandler>k__BackingField: {fileID: 0}
   <Rigidbody>k__BackingField: {fileID: 0}
+--- !u!114 &5668407109732068092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894178117275089371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09c695d046a9204abdf7a5df8fa8942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ProjectileObject>k__BackingField: {fileID: 6017114440420158270}
 --- !u!1001 &4177630754479495536
 PrefabInstance:
   m_ObjectHideFlags: 0

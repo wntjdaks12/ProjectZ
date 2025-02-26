@@ -14,14 +14,17 @@ public class HeroController : MonoBehaviour
 
         if (dirVec3 != Vector3.zero)
         {
-            HeroObject.OnRun(dirVec3, 2);
+            HeroObject.OnRun(dirVec3, HeroObject.Hero.StatAbility.CurrentSpeed);
         }
         else
         {
             HeroObject.OnIde();
         }
+    }
 
-        if (Input.GetKey(KeyCode.Space))
+    private void LateUpdate()
+    {
+        if (Input.GetKey(KeyCode.Space) && !HeroObject.animationHandler.IsAttacking)
         {
             HeroObject.OnBasicAttack();
         }

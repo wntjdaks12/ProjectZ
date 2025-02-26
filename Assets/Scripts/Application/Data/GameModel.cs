@@ -22,6 +22,8 @@ public class GameModel : MonoBehaviour
         PresetData.LoadData<PrefabInfo>(nameof(PrefabInfo), "JsonDatas/PrefabInfo"); // 프리팹 정보
         PresetData.LoadData<Hero>(nameof(Hero), "JsonDatas/Hero"); // 히어로
         PresetData.LoadData<Projectile>(nameof(Projectile), "JsonDatas/Projectile"); // 투사체
+        PresetData.LoadData<BasicAttackInfo>(nameof(BasicAttackInfo), "JsonDatas/BasicAttackInfo"); // 기본 공격 정보
+        PresetData.LoadData<StatData>(nameof(StatData), "JsonDatas/Stat"); // 스탯
         // ----------------------------------------------------------------------------------------------------------------
     }
 }
